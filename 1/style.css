@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --yellow-color: #ffc93d;
+    --link-color: #1285ca;
+    --link-color_selected: #106ba2;
+    --gray-color: #a3a3c1;
+}
+
+html, body {
+    height: 100vh;
+}
+
+html {
+    font-family: Arial, 'sans-serif';
+    font-size: 10px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+.link:hover {
+    color: var(--link-color_selected);
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        width: 100%;
+        padding: 0 1rem;
+    }
+}
+
+.content {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.search__logo {
+    height: 100%;
+    margin-right: 3%;
+}
+
+.search__line {
+    width: 90%;
+    background-color: var(--yellow-color);
+    display: flex;
+    border: var(--yellow-color) 0.1rem solid;
+    border-radius: 0.5rem;
+}
+
+.search__input {
+    padding: 0.5rem 0.5rem;
+    width: 90%;
+    border: 0;
+    border-radius: 0.4rem;
+}
+
+.search__input:focus {
+    outline: none;
+}
+
+.search__button {
+    font-size: 1rem;
+    width: 10%;
+    border: 0;
+    background-color: transparent;
+    margin: 0 .5rem;
+    cursor: pointer;
+}
+
+.error {
+    width: 75%;
+    margin: 1.7rem auto;
+}
+
+.error__title {
+    margin-bottom: .5rem;
+}
+
+.services {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.services__list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.services__item {
+    width: 45%;
+    list-style: none;
+    margin-bottom: .5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.services__image {
+    height: 1rem;
+    margin-right: .4rem;
+}
+
+.footer {
+    padding-bottom: 2rem;
+}
+
+.footer__nav {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__link {
+    color: var(--gray-color);
+}
